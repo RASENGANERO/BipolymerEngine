@@ -746,3 +746,12 @@ body {
     }
 }
 
+.section-ban{
+    padding: 0px;
+    background: none !important;
+}
+.news-article-container{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
