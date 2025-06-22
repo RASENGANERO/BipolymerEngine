@@ -59,7 +59,7 @@ function switchLanguage(lang) {
             if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
                 element.placeholder = text;
             } else {
-                element.textContent = text;
+                element.innerHTML = text;
             }
         }
     });
@@ -152,4 +152,51 @@ if (resultsSection) {
     
     resultsObserver.observe(resultsSection);
 }
+
+function setNewsBlock(index,className) {
+    let blocks = document.getElementsByClassName('next-container');
+    for (let i=0; i<blocks.length; i++) {
+        if (blocks[i].getAttribute('data-news-index') == index) {
+            blocks[i].setAttribute('class',className);
+        }
+    }
+}
+function setButtons(index, type){
+    let btns = document.getElementsByClassName('read-more');
+    for (let i =0;i < btns.length; i++) {
+        if (btns[i].hasAttribute('data-news-index')) {
+            if (btns[i].getAttribute('data-news-index') == index) {
+                if (btns[i].getAttribute('type-btn') == type) {
+                    btns[i].setAttribute('class','read-more-active read-more');
+                }
+                else {
+                    btns[i].setAttribute('class','read-more');
+                }
+            }
+        }
+    }
+}
+function showNews(event) {
+    let indexs = event.target.getAttribute('data-news-index');
+    setButtons(indexs, 'hide');
+    setNewsBlock(indexs, 'next-container-active next-container');
+}
+function hideNews(event) {
+    let indexs = event.target.getAttribute('data-news-index');
+    setButtons(indexs, 'show');
+    setNewsBlock(indexs, 'next-container');
+}
+document.addEventListener('DOMContentLoaded', ()=>{
+    let hideShows = document.getElementsByClassName('read-more');
+    for (let i=0; i<hideShows.length; i++) {
+        if (hideShows[i].hasAttribute('data-news-index')) {
+            if (hideShows[i].getAttribute('type-btn') == 'show') {
+                hideShows[i].addEventListener('click', showNews);
+            }
+            else {
+                hideShows[i].addEventListener('click', hideNews);
+            }
+        }
+    }
+});
 

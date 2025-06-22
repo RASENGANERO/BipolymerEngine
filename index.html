@@ -11,7 +11,7 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="container">
+        <div class="header-container container">
             <div class="header-content">
                 <div class="logo-section">
                     <img src="poligy_logo.png" alt="Poligy Logo" class="life-logo">
@@ -20,42 +20,48 @@
                         <span class="project-subtitle">LIFE19 ENV/DE/000456</span>
                     </div>
                 </div>
-                <nav class="main-nav">
-                    <ul class="nav-list">
-                        <li>
-                            <a href="#about" class="nav-link active" data-en="About" data-de="Über uns">About</a>
-                        </li>
-                        <li>
-                            <a href="#project" class="nav-link" data-en="Project" data-de="Projekt">Project</a>
-                        </li>
-                        <li>
-                            <a href="#partners" class="nav-link" data-en="Partners" data-de="Partner">Partners</a>
-                        </li>
-                        <li>
-                            <a href="#results" class="nav-link" data-en="Results" data-de="Ergebnisse">Results</a>
-                        </li>
-                        <li>
-                            <a href="#downloads" class="nav-link" data-en="Downloads" data-de="Downloads">Downloads</a>
-                        </li>
-                        <li>
-                            <a href="#news" class="nav-link" data-en="News" data-de="Nachrichten">News</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="nav-link" data-en="Contact" data-de="Kontakte">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="language-selector">
-                    <select id="languageSelect">
-                        <option value="en">EN</option>
-                        <option value="de">DE</option>
-                    </select>
+                <div class="last-section-header-menu">
+                    <nav class="main-nav">
+                        <ul class="nav-list">
+                            <li>
+                                <a href="#about" class="nav-link active" data-en="About" data-de="Über uns">About</a>
+                            </li>
+                            <li>
+                                <a href="#project" class="nav-link" data-en="Project" data-de="Projekt">Project</a>
+                            </li>
+                            <li>
+                                <a href="#partners" class="nav-link" data-en="Partners" data-de="Partner">Partners</a>
+                            </li>
+                            <li>
+                                <a href="#results" class="nav-link" data-en="Results" data-de="Ergebnisse">Results</a>
+                            </li>
+                            <li>
+                                <a href="#downloads" class="nav-link" data-en="Downloads" data-de="Downloads">Downloads</a>
+                            </li>
+                            <li>
+                                <a href="#news" class="nav-link" data-en="News" data-de="Nachrichten">News</a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="nav-link" data-en="Contact" data-de="Kontakte">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="last-section-header">
+                        <div class="language-selector">
+                            <select id="languageSelect">
+                                <option value="en">EN</option>
+                                <option value="de">DE</option>
+                            </select>
+                        </div>
+                        <button class="mobile-menu-toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    
                 </div>
-                <button class="mobile-menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                
             </div>
         </div>
     </header>
@@ -320,25 +326,98 @@
             </div>
             
             <div class="news-grid">
-                <div class="news-card">
+                <div data-news-index="0" class="news-card">
                     <div class="news-date" data-en="March 2025" data-de="März 2025">March 2025</div>
-                    <h3 data-en="First Prototype Installation Completed" data-de="Erste Prototyp-Installation abgeschlossen">First Prototype Installation Completed</h3>
-                    <p data-en="Successfully installed the first bipolymer waste heat recovery prototype at our pilot data center facility." data-de="Erfolgreich den ersten Bipolymere-Abwärmerückgewinnungsprototyp in unserer Pilot-Rechenzentrumsanlage installiert.">Successfully installed the first bipolymer waste heat recovery prototype at our pilot data center facility.</p>
-                    <a href="#" class="read-more" data-en="Read More →" data-de="Mehr lesen →">Read More →</a>
+                    <h3 data-en="First Prototype Installation Completed" data-de="Erster Prototyp installiert">First Prototype Installation Completed</h3>
+                    <p class="first-block-text italic-text-news" data-en="Successfully installed the first bipolymer waste heat recovery prototype at our pilot data center facility." data-de="Erfolgreiche Installation des ersten bipolymeren Abwärmerückgewinnungs-Prototyps in unserer Pilot-Rechenzentrumsanlage.">Successfully installed the first bipolymer waste heat recovery prototype at our pilot data center facility.</p>
+                    
+                    <div data-news-index="0" class="next-container">
+                        <p data-en="We are excited to announce the completion of the <b>first prototype</b> installation of our innovative bipolymer waste heat recovery system at our pilot data center. This marks a significant milestone in our mission to transform how data centers handle thermal energy." data-de="Wir freuen uns sehr, die erfolgreiche Installation des <b>ersten Prototyps</b> unseres innovativen bipolymeren Abwärmerückgewinnungssystems in unserem Pilot-Rechenzentrum bekannt zu geben. Dies markiert einen bedeutenden Meilenstein auf unserem Weg, wie Rechenzentren künftig thermische Energie nutzen.">We are excited to announce the completion of the <b>first prototype</b> installation of our innovative bipolymer waste heat recovery system at our pilot data center. This marks a significant milestone in our mission to transform how data centers handle thermal energy.</p>
+                        <p data-en="The new prototype captures waste heat generated by IT hardware—heat that would typically be dissipated into the environment—and repurposes it for campus-wide heating solutions. Our system not only enhances energy efficiency but also contributes to sustainable building operations by reducing reliance on traditional heating methods." data-de="Der neue Prototyp sammelt die Abwärme, die von der IT-Hardware erzeugt wird – Wärme, die normalerweise in die Umwelt abgegeben würde – und nutzt sie für Heizlösungen innerhalb des Campus. Unser System erhöht nicht nur die Energieeffizienz, sondern trägt auch zu nachhaltigem Gebäudebetrieb bei, indem es die Abhängigkeit von traditionellen Heizmethoden reduziert.">The new prototype captures waste heat generated by IT hardware—heat that would typically be dissipated into the environment—and repurposes it for campus-wide heating solutions. Our system not only enhances energy efficiency but also contributes to sustainable building operations by reducing reliance on traditional heating methods.</p>
+                        <p data-en="Following the success of similar initiatives—such as ThermalWorks’ systems that turn server heat into carbon-neutral energy (<a href='https://thermalworks.com'>thermalworks.com</a>) and NTT DATA’s Berlin project delivering up to 8 MW of district heating (<a href='https://businesswire.com'>businesswire.com</a>) — our bipolymer prototype stands out by leveraging proprietary materials to optimize heat transfer and control. Initial performance tests show promising results in thermal recovery rates and system reliability, even under typical data center loads." data-de="Nach dem Erfolg ähnlicher Initiativen - wie den Systemen von ThermalWorks, die Serverwärme in klimaneutrale Energie umwandeln (<a href='https://thermalworks.com'>thermalworks.com</a>) und das Berliner Projekt von NTT DATA, das bis zu 8 MW Fernwärme liefert (<a href='https://businesswire.com'>businesswire.com</a>) - Unser Bipolymer-Prototyp zeichnet sich durch die Nutzung proprietärer Materialien zur Optimierung der Wärmeübertragung und -kontrolle aus. Erste Leistungstests zeigen vielversprechende Ergebnisse in Bezug auf Wärmerückgewinnungsraten und Systemzuverlässigkeit, selbst unter typischen Rechenzentrumslasten.">Following the success of similar initiatives—such as ThermalWorks’ systems that turn server heat into carbon-neutral energy (<a href="https://thermalworks.com">thermalworks.com</a>) and NTT DATA’s Berlin project delivering up to 8 MW of district heating (<a href="https://businesswire.com">businesswire.com</a>) — our bipolymer prototype stands out by leveraging proprietary materials to optimize heat transfer and control. Initial performance tests show promising results in thermal recovery rates and system reliability, even under typical data center loads.</p>
+                        <p data-en="Over the next few weeks, we’ll monitor the system’s real world performance, fine-tune control parameters, and gather comprehensive data to inform the next phase: scaling up to full-scale deployment." data-de="In den kommenden Wochen werden wir die realen Leistungsdaten des Systems überwachen, die Steuerparameter optimieren und umfassende Daten sammeln, um die nächste Phase einzuleiten: die Skalierung zur vollständigen Implementierung.">Over the next few weeks, we’ll monitor the system’s real world performance, fine-tune control parameters, and gather comprehensive data to inform the next phase: scaling up to full-scale deployment.</p>
+                        <p data-en="This installation brings us one step closer to a future where data centers aren’t just energy consumers—they become sustainable heat hubs contributing to broader carbon reduction goals." data-de="Diese Installation bringt uns dem Ziel näher, Rechenzentren nicht nur als Energiekonsumenten zu sehen – sondern als nachhaltige Wärmezentren, die zur Reduzierung des CO₂ Fußabdrucks beitragen.">This installation brings us one step closer to a future where data centers aren’t just energy consumers—they become sustainable heat hubs contributing to broader carbon reduction goals.</p>
+                    </div>
+                    <div class="read-more-container">
+                        <button data-news-index="0" type-btn="show" class="read-more-active read-more" data-en="Read More →" data-de="Mehr lesen →">Read More →</button>
+                        <button data-news-index="0" type-btn="hide" class="read-more" data-en="← Hide" data-de="← Verstecken">← Hide</button>
+                    </div>
                 </div>
                 
-                <div class="news-card">
+                <div data-news-index="1" class="news-card">
                     <div class="news-date" data-en="January 2025" data-de="Januar 2025">January 2025</div>
-                    <h3 data-en="Data Center Partnership Announced" data-de="Rechenzentrum-Partnerschaft angekündigt">Data Center Partnership Announced</h3>
-                    <p data-en="New collaboration with leading data center operators to demonstrate waste heat recovery technology." data-de="Neue Zusammenarbeit mit führenden Rechenzentrum-Betreibern zur Demonstration der Abwärmerückgewinnungstechnologie.">New collaboration with leading data center operators to demonstrate waste heat recovery technology.</p>
-                    <a href="#" class="read-more" data-en="Read More →" data-de="Mehr lesen →">Read More →</a>
+                    <h3 data-en="Waste Heat Utilisation in German Data Centres – Now Mandatory!" data-de="Abwärmenutzung in deutschen Rechenzentren – Jetzt wird es Pflicht!">Waste Heat Utilisation in German Data Centres – Now Mandatory!</h3>
+                    <p class="first-block-text" data-en="In Germany, using waste heat from data centres is becoming the norm — and not just a recommendation." data-de="In Deutschland wird die Nutzung von Abwärme aus Rechenzentren bald zur Norm – und nicht nur eine Empfehlung.">In Germany, using waste heat from data centres is becoming the norm — and not just a recommendation.</p>
+                    <div data-news-index="1" class="next-container">
+                        <p data-en="From <b>1 July 2026</b>, the new Energy Efficiency Act (EnEfG) mandates that newly commissioned data centres with a non redundant power connection of 300 kW or more <b>must achieve an Energy Reuse Factor (ERF) of at least 10 %.</b> For operations starting 1 July 2027, the requirement increases to 15 %, and for those after 1 July 2028, to 20 %, to be achieved within two years after commissioning." data-de="Ab dem <b>1. Juli 2026</b> schreibt das neue Energieeffizienzgesetz (EnEfG) für neu errichtete Rechenzentren mit einer Leistung von mindestens 300 kW vor, dass mindestens <b>10 % der erzeugten Abwärme wiederverwendet</b> werden müssen. Dieser Wert steigt auf <b>15 % ab Juli 2027</b> und schließlich auf <b>20 % ab Juli 2028</b>, jeweils innerhalb von zwei Jahren nach Inbetriebnahme.">From <b>1 July 2026</b>, the new Energy Efficiency Act (EnEfG) mandates that newly commissioned data centres with a non redundant power connection of 300 kW or more <b>must achieve an Energy Reuse Factor (ERF) of at least 10 %.</b> For operations starting 1 July 2027, the requirement increases to 15 %, and for those after 1 July 2028, to 20 %, to be achieved within two years after commissioning.</p>
+                        <p data-en="The aim is clear: waste heat must no longer just dissipate unused. Operators are required to channel it into their own heating networks or collaborate with local district heating providers. Germany is steering data centres toward becoming integral components of sustainable urban energy solutions." data-de="Wesentlicher Zweck: Der erzeugten Wärme darf nicht länger ins Nichts verpuffen. Betreiber müssen also entweder an eigene Wärmenetzwerke anbinden oder entsprechende Kooperationen mit lokalen Versorgern eingehen. Damit verfolgt Deutschland ein klares Ziel: Rechenzentren sollen künftig nicht nur Daten verarbeiten, sondern auch einen aktiven Beitrag zur klimafreundlichen Wärmeversorgung leisten.">The aim is clear: waste heat must no longer just dissipate unused. Operators are required to channel it into their own heating networks or collaborate with local district heating providers. Germany is steering data centres toward becoming integral components of sustainable urban energy solutions.</p>
+                        <p data-en="<b>🔧 Our Innovation: Bipolymer Waste Heat Harvesting Technology</b>" data-de="<b>🔧 Unsere Antwort: Bipolymer-Technologie für Abwärmerückgewinnung</b>"><b>🔧 Our Innovation: Bipolymer Waste Heat Harvesting Technology</b></p>
+                        <p data-en="We’re developing a breakthrough bipolymer-based solution designed to recover data-centre waste heat with 10 – 15 % efficiency — aligned perfectly with upcoming legal targets." data-de="Bei uns arbeiten wir an einer bahnbrechenden bipolymeren Technologie, die Abwärme <b>effizient zwischen 10 – 15 %</b> zurückgewinnt – und zwar schon in der Produkt-Reifephase!">We’re developing a breakthrough bipolymer-based solution designed to recover data-centre waste heat with 10 – 15 % efficiency — aligned perfectly with upcoming legal targets.</p>
+                        <ul class="news-list">
+                            <li>
+                                <p data-en="<b>Efficiency goal:</b> 10–15 % heat recovery — ready for direct injection into thermal networks" data-de="<b>Effizienz-Ziel:</b> Bis zu 15 % Rückgewinnung – ideal zum direkten Einspeisen in Wärmenetze"><b>Efficiency goal:</b> 10–15 % heat recovery — ready for direct injection into thermal networks</p>
+                            </li>
+                            <li>
+                                <p data-en="<b>Pilot phase underway:</b> We are conducting extensive real-world trials and refining the system toward market readiness" data-de="<b>Marktreife in Sicht:</b> Wir führen aktuell intensiv Pilotprojekte durch und optimieren das System für den realen Einsatz"><b>Pilot phase underway:</b> We are conducting extensive real-world trials and refining the system toward market readiness</p>
+                            </li>
+                        </ul>
+                        <p data-en="<b>🌍 Why It Matters</b>" data-de="<b>🌍 Warum es sich lohnt</b>"><b>🌍 Why It Matters</b></p>
+                        <ul class="news-list">
+                            <li>
+                                <p data-en="<b>Regulatory compliance:</b> Ensures data centres meet EnEfG ERF requirements" data-de="<b>Rechtlich sicher:</b> Erfüllt die EnEfG-Anforderungen langfristig"><b>Regulatory compliance:</b> Ensures data centres meet EnEfG ERF requirements</p>
+                            </li>
+                            <li>
+                                <p data-en="<b>Environmental impact:</b> Reduces CO₂ emissions by replacing fossil-fuel based heating" data-de="<b>Ökologisch sinnvoll:</b> Reduziert CO₂-Emissionen durch Ersatz fossiler Heizlösungen"><b>Environmental impact:</b> Reduces CO₂ emissions by replacing fossil-fuel based heating</p>
+                            </li>
+                            <li>
+                                <p data-en="<b>Economic benefit:</b> Waste heat becomes a valuable resource that can generate revenue" data-de="<b>Wirtschaftlich attraktiv:</b> Betreiber können Wärme zusätzlich vermarkten"><b>Economic benefit:</b> Waste heat becomes a valuable resource that can generate revenue</p>
+                            </li>
+                        </ul>
+                        <p data-en="With our novel bipolymer system, we don’t just intend to meet the legal standard — we aim to surpass it. The era of green data-centre heat is about to begin. Join us in shaping a sustainable digital infrastructure!" data-de="Mit unserem innovativen bipolymeren System wollen wir die neue gesetzliche Vorgabe nicht nur erfüllen – wir wollen sie übertreffen. Die Zukunft der grünen Datenzentren beginnt jetzt. Sein Sie dabei!">With our novel bipolymer system, we don’t just intend to meet the legal standard — we aim to surpass it. The era of green data-centre heat is about to begin. Join us in shaping a sustainable digital infrastructure!</p>
+                    </div>
+                    
+                    
+                  
+                    
+                    
+                    <div class="read-more-container">
+                        <button data-news-index="1" type-btn="show" class="read-more-active read-more" data-en="Read More →" data-de="Mehr lesen →">Read More →</button>
+                        <button data-news-index="1" type-btn="hide" class="read-more" data-en="← Hide" data-de="← Verstecken">← Hide</button>
+                    </div>
                 </div>
                 
-                <div class="news-card">
+                <div data-news-index="2" class="news-card">
                     <div class="news-date" data-en="December 2024" data-de="Dezember 2024">December 2024</div>
-                    <h3 data-en="Project Kickoff Successful" data-de="Projekt-Auftakt erfolgreich">Project Kickoff Successful</h3>
-                    <p data-en="LIFE BipolymerEngine project officially launched with ambitious goals for waste heat recovery innovation." data-de="LIFE BipolymerEngine-Projekt offiziell mit ehrgeizigen Zielen für Innovation in der Abwärmerückgewinnung gestartet.">LIFE BipolymerEngine project officially launched with ambitious goals for waste heat recovery innovation.</p>
-                    <a href="#" class="read-more" data-en="Read More →" data-de="Mehr lesen →">Read More →</a>
+                    <h3 data-en="From Data Centers to Green Powerhouses: Harnessing Waste Heat with Poligy" data-de="Von Rechenzentren zu grünen Kraftwerken: Abwärme mit Poligy nutzen">From Data Centers to Green Powerhouses: Harnessing Waste Heat with Poligy</h3>
+                    <p class="first-block-text" data-en="Germany's ambitious climate goals are reshaping the role of data centers. With the introduction of the <b>Energy Efficiency Act (EnEfG)</b>, operators are now mandated to utilize a significant portion of their waste heat." data-de="Deutschlands ehrgeizige Klimaziele verändern die Rolle von Rechenzentren. Mit dem Inkrafttreten des <b>Energieeffizienzgesetzes (EnEfG)</b> sind Betreiber nun verpflichtet, einen erheblichen Teil ihrer Abwärme zu nutzen. Diese regulatorische Veränderung bietet eine einzigartige Gelegenheit, Rechenzentren in aktive Beiträge zu nachhaltigen Energiesystemen zu verwandeln.">Germany's ambitious climate goals are reshaping the role of data centers. With the introduction of the <b>Energy Efficiency Act (EnEfG)</b>, operators are now mandated to utilize a significant portion of their waste heat.</p>
+                    <div data-news-index="2" class="next-container">
+                        <p data-en="This regulatory shift presents a unique opportunity to transform data centers into active contributors to sustainable energy systems." data-de="Diese regulatorische Veränderung bietet eine einzigartige Gelegenheit, Rechenzentren in aktive Beiträge zu nachhaltigen Energiesystemen zu verwandeln.">This regulatory shift presents a unique opportunity to transform data centers into active contributors to sustainable energy systems.</p>
+                        <p data-en="<b>🔥 The Waste Heat Challenge</b>" data-de="<b>🔥 Die Herausforderung der Abwärme</b>"><b>🔥 The Waste Heat Challenge</b></p>
+                        <p data-en="Data centers are notorious for their energy consumption, with a substantial amount of energy dissipated as low-grade heat, typically ranging from <b>50°C to 150°C</b>. Traditional methods of capturing and converting this heat into usable energy have been inefficient and costly. However, advancements in technology are paving the way for more effective solutions." data-de="Rechenzentren sind für ihren hohen Energieverbrauch bekannt, wobei ein erheblicher Teil der Energie als Niedertemperaturabwärme verloren geht, typischerweise im Bereich von <b>50 °C bis 150 °C</b>. Traditionelle Methoden zur Erfassung und Umwandlung dieser Wärme in nutzbare Energie waren ineffizient und kostspielig. Jedoch ebnen technologische Fortschritte den Weg für effektivere Lösungen.">Data centers are notorious for their energy consumption, with a substantial amount of energy dissipated as low-grade heat, typically ranging from <b>50°C to 150°C</b>. Traditional methods of capturing and converting this heat into usable energy have been inefficient and costly. However, advancements in technology are paving the way for more effective solutions.</p>
+                        <p data-en="<b>⚙️ Poligy's Innovative Solution</b>" data-de="<b>⚙️ Poligys innovative Lösung</b>"><b>⚙️ Poligy's Innovative Solution</b></p>
+                        <p data-en="Poligy has developed a groundbreaking <b>bipolymer-based system</b> that efficiently converts low-grade waste heat into electricity. This technology operates on the principle of differential thermal expansion, where two polymers with different coefficients of expansion are combined. When exposed to heat, the polymers bend, driving a mechanical system that generates electricity." data-de="Poligy hat ein bahnbrechendes <b>bipolymeres System</b> entwickelt, das effizient Niedertemperaturabwärme in Elektrizität umwandelt. Diese Technologie basiert auf dem Prinzip der unterschiedlichen Wärmeausdehnung zweier Polymere, die bei Temperaturänderungen mechanische Bewegung erzeugen, die dann in Strom umgewandelt wird.">Poligy has developed a groundbreaking <b>bipolymer-based system</b> that efficiently converts low-grade waste heat into electricity. This technology operates on the principle of differential thermal expansion, where two polymers with different coefficients of expansion are combined. When exposed to heat, the polymers bend, driving a mechanical system that generates electricity.</p>
+                        <p data-en="Key features of Poligy's solution include:" data-de="<b>Hauptmerkmale von Poligys Lösung:</b>">Key features of Poligy's solution include:</p>
+                        <ul class="news-list">
+                            <li>
+                                <p data-en="<b>Efficiency:</b> Converts waste heat into electricity with an efficiency range of <b>4% to 15%</b>, depending on temperature gradients." data-de="<b>Effizienz:</b> Umwandlung von Abwärme in Elektrizität mit einer Effizienzspanne von <b>4 % bis 15 %</b>, abhängig von Temperaturgradienten."><b>Efficiency:</b> Converts waste heat into electricity with an efficiency range of <b>4% to 15%</b>, depending on temperature gradients.</p>
+                            </li>
+                            <li>
+                                <p data-en="<b>Cost-Effectiveness:</b> Utilizes abundant and recyclable materials, reducing production costs and environmental impact." data-de="<b>Kosteneffektivität:</b> Verwendung von reichlich verfügbaren und recycelbaren Materialien, wodurch Produktionskosten und Umweltbelastung gesenkt werden."><b>Cost-Effectiveness:</b> Utilizes abundant and recyclable materials, reducing production costs and environmental impact.</p>
+                            </li>
+                            <li>
+                                <p data-en="<b>Scalability:</b> The modular design allows for easy integration into existing infrastructure without significant modifications." data-de="<b>Skalierbarkeit:</b> Das modulare Design ermöglicht eine einfache Integration in bestehende Infrastrukturen ohne erhebliche Modifikationen."><b>Scalability:</b> The modular design allows for easy integration into existing infrastructure without significant modifications.</p>
+                            </li>
+                        </ul>
+                        <p data-en="<b>🌍 Aligning with Regulatory Requirements</b>" data-de="<b>🌍 Übereinstimmung mit regulatorischen Anforderungen</b>"><b>🌍 Aligning with Regulatory Requirements</b></p>
+                        <p data-en="The EnEfG mandates that data centers achieve an <b>Energy Reuse Factor (ERF)</b> of at least <b>10%</b> by 2026, increasing to <b>15%</b> by 2027, and <b>20%</b> by 2028. Poligy's technology not only meets these requirements but also offers a pathway to exceed them, turning regulatory compliance into a competitive advantage." data-de="Das EnEfG schreibt vor, dass Rechenzentren einen <b>Energy Reuse Factor (ERF)</b> von mindestens <b>10 %</b> bis 2026 erreichen müssen, der bis 2027 auf <b>15 %</b> und bis 2028 auf <b>20 %</b> steigt, jeweils innerhalb von zwei Jahren nach Inbetriebnahme. Poligys Technologie erfüllt nicht nur diese Anforderungen, sondern bietet auch einen Weg, sie zu übertreffen, indem sie die Abwärme effizient in nutzbare Energie umwandelt.">The EnEfG mandates that data centers achieve an <b>Energy Reuse Factor (ERF)</b> of at least <b>10%</b> by 2026, increasing to <b>15%</b> by 2027, and <b>20%</b> by 2028. Poligy's technology not only meets these requirements but also offers a pathway to exceed them, turning regulatory compliance into a competitive advantage.</p>
+                        <p data-en="<b>🚀 Looking Ahead</b>" data-de="<b>🚀 Ausblick</b>"><b>🚀 Looking Ahead</b></p>
+                        <p data-en="As Germany continues to lead in sustainable energy initiatives, Poligy's innovative approach positions data centers as pivotal players in the green energy transition. By harnessing waste heat, data centers can reduce their carbon footprint, lower operational costs, and contribute to a more resilient and sustainable energy grid." data-de="Während Deutschland weiterhin führend in nachhaltigen Energieinitiativen ist, positioniert sich Poligys innovative Herangehensweise, Rechenzentren als zentrale Akteure im Übergang zu grüner Energie zu etablieren. Durch die Nutzung von Abwärme können Rechenzentren ihren CO₂-Fußabdruck reduzieren, Betriebskosten senken und zu einem resilienteren und nachhaltigeren Energiesystem beitragen.">As Germany continues to lead in sustainable energy initiatives, Poligy's innovative approach positions data centers as pivotal players in the green energy transition. By harnessing waste heat, data centers can reduce their carbon footprint, lower operational costs, and contribute to a more resilient and sustainable energy grid.</p>                        
+                    </div>
+
+                    <div class="read-more-container">
+                        <button data-news-index="2" type-btn="show" class="read-more-active read-more" data-en="Read More →" data-de="Mehr lesen →">Read More →</button>
+                        <button data-news-index="2" type-btn="hide" class="read-more" data-en="← Hide" data-de="← Verstecken">← Hide</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -353,7 +432,7 @@
             </div>
             
             <div class="contact-grid">
-                <div class="contact-card">
+                <div class="contact-grid-card contact-card">
                     <h3 data-en="Project Information" data-de="Projektinformationen">Project Information</h3>
                     <div class="contact-info">
                         <p><strong data-en="Poligy GmbH" data-de="Politik GmbH">Poligy GmbH</strong></p>
